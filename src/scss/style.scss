@@ -1,0 +1,81 @@
+$primary: #3292a6;
+$primary-overlay: rgba(50,146,166,0.8);
+
+body{
+	margin-top: 105px;
+}
+
+
+/*---- Navbar Style ----*/
+.navbar { 
+	box-shadow: 2px 2px 5px $primary;
+	opacity: 0.9;
+	background: #fff;
+	
+	.nav-item{
+		font-size: 1.4rem;
+		padding-right: 20px;
+	}
+}
+
+
+/*---- Showcase Style ----*/
+#showcase{
+	position: relative; /* so the overlay that's inside of it can be position absolute */
+	background: url('../img/mountains.jpg');
+	min-height: 600px;
+	
+	
+	.primary-overlay{
+		background: $primary-overlay;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+	}
+}
+
+
+/*---- Showcase Style ----*/
+#newsletter{
+	background-color: black;
+	
+}
+
+
+/*---- About Style ----*/
+.info-header{
+	width: 50%;
+	margin: auto; /* טריק למרכז אלמנטים */
+	border-bottom: 1px #ddd solid;
+}
+
+
+/*---- Authors Style ----*/
+#authors{
+	img{
+		margin-top: -50px;
+	}
+	
+	.fa{
+		font-size: 25px;
+	}
+	
+	.card:hover{
+		background: $primary;
+		
+		.fa{
+			color:#fff;
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
